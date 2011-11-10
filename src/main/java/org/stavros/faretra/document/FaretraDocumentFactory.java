@@ -13,7 +13,7 @@ public class FaretraDocumentFactory {
 	
 	private final static Logger logger = LoggerFactory.getLogger(FaretraDocumentFactory.class);
 	
-	public static FaretraDocument createFromXml(String filename) {
+	public static FaretraDocument createFromXml(String filename) throws FaretraXmlDocumentException {
 		SAXBuilder builder = new SAXBuilder();
 		
 		try {
@@ -31,8 +31,8 @@ public class FaretraDocumentFactory {
 		return null;
 	}
 	
-	public static FaretraDocument createFromDocument(Document dom) {
-		FaretraDocument fd = new FaretraDocument();
+	public static FaretraDocument createFromDocument(Document dom) throws FaretraXmlDocumentException {
+		FaretraDocument fd = new FaretraDocument(dom.getRootElement());
 		return fd;
 	}
 }
