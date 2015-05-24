@@ -8,10 +8,11 @@ import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.stavros.faretra.document.model.FaretraDocument;
 
 public class FaretraDocumentFactory {
 	
-	private final static Logger logger = LoggerFactory.getLogger(FaretraDocumentFactory.class);
+	private final static Logger LOGGER = LoggerFactory.getLogger(FaretraDocumentFactory.class);
 	
 	public static FaretraDocument createFromXml(String filename) throws FaretraXmlDocumentException {
 		SAXBuilder builder = new SAXBuilder();
@@ -23,10 +24,10 @@ public class FaretraDocumentFactory {
 			return createFromDocument(document);
 		}
 		catch(IOException ioe) {
-			logger.error(ioe.getMessage(), ioe);
+			LOGGER.error(ioe.getMessage(), ioe);
 		}
 		catch(JDOMException e) {
-			logger.error(e.getMessage(), e);
+			LOGGER.error(e.getMessage(), e);
 		}
 		return null;
 	}

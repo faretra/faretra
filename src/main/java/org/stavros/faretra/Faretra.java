@@ -4,9 +4,9 @@ import java.awt.Frame;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.stavros.faretra.document.FaretraDocument;
 import org.stavros.faretra.document.FaretraDocumentFactory;
 import org.stavros.faretra.document.FaretraXmlDocumentException;
+import org.stavros.faretra.document.model.FaretraDocument;
 
 public class Faretra extends Frame {
 	

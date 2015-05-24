@@ -1,9 +1,11 @@
-package org.stavros.faretra.document;
+package org.stavros.faretra.document.model;
 
 import java.awt.Dimension;
 import java.util.List;
 
 import org.jdom.Element;
+import org.stavros.faretra.document.FaretraXmlConstants;
+import org.stavros.faretra.document.FaretraXmlDocumentException;
 
 public class FaretraStep {
 	

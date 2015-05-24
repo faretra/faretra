@@ -1,8 +1,10 @@
-package org.stavros.faretra.executor;
+package org.stavros.faretra.process;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
+import org.stavros.faretra.process.model.ProcessDescription;
 
 public class Executor {
 	public void execute(ProcessDescription pd) throws IOException, InterruptedException {

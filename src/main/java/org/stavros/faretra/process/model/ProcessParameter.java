@@ -1,4 +1,4 @@
-package org.stavros.faretra.executor;
+package org.stavros.faretra.process.model;
 
 import java.util.ArrayList;
 import java.util.List;

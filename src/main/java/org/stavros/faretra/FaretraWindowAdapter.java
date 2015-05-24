@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 
 public class FaretraWindowAdapter implements WindowListener {
 
-	private final static Logger logger = LoggerFactory.getLogger(FaretraWindowAdapter.class);
+	private final static Logger LOGGER = LoggerFactory.getLogger(FaretraWindowAdapter.class);
 	
 	public void windowOpened(WindowEvent e) {
 		// TODO Auto-generated method stub

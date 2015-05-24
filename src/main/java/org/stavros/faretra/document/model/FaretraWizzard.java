@@ -1,4 +1,4 @@
-package org.stavros.faretra.document;
+package org.stavros.faretra.document.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,6 +6,8 @@ import java.util.List;
 import org.jdom.Element;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.stavros.faretra.document.FaretraXmlConstants;
+import org.stavros.faretra.document.FaretraXmlDocumentException;
 
 public class FaretraWizzard {
 	
